@@ -11,3 +11,12 @@
 
 'use strict';
 
+function roll_dice(qty, sides) {
+    let answer = randInt(1, sides) + randInt(1, sides) + randInt(1, sides) + randInt(1, sides)
+    return answer;
+}
+
+function randInt(min, max) {
+    let rnd = Math.floor(Math.random() * (max - min + 1)) + min;
+    return rnd;
+}
